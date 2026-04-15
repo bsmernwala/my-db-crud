@@ -5,8 +5,9 @@ import "./index.css"
 function Show()
 {    
     const [slist,setSList]=useState([]);
-    const API_URL = process.env.API || "http://localhost:5000";
-
+   // alert(process.env.REACT_APP_API);
+    const API_URL = process.env.REACT_APP_API;
+    
     useEffect(()=>{
     
         axios.get(`${API_URL}/student/show`).then((res)=>{

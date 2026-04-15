@@ -6,7 +6,7 @@ function Save()
     const[rno,setRno]=useState("");
     const[sname,setSName]=useState("");
     const[marks,setMarks]=useState("");
-    const API_URL = process.env.API || "http://localhost:5000";
+   const API_URL = process.env.REACT_APP_API;
     const handleRnoText=(evt)=>{
         setRno(evt.target.value);
     }
